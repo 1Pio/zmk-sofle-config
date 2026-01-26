@@ -97,11 +97,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans     &kp F1      &kp F2         &kp F3     &kp F4             &kp F5                                         &kp F6    &kp F7                &kp F8                 &kp F9        &kp F10        &kp F11
-&kp CARET  &kp ESCAPE  &kp AT_SIGN    &kp HASH   &kp DOLLAR         &kp PERCENT  &kp AMPERSAND                               &kp LESS_THAN         &kp GREATER_THAN       &kp PIPE      &kp BACKSPACE  &kp F12
-&trans     &kp TAB     &kp EQUAL      &kp SQT    &kp DOUBLE_QUOTES  &kp GRAVE    &kp LBKT                                    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK  &kp ENTER      &kp DELETE
-&trans     &kp TILDE   &kp RA(MINUS)  &kp MINUS  &kp PLUS           &kp TILDE    &trans         &kp C_MUTE         &kp RBKT  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp MINUS     &kp SLASH      &kp BACKSLASH
-                       &trans         &trans     &trans             &to 0        &trans         &kp RIGHT_CONTROL  &to 2     &trans                &trans                 &trans
+&trans     &kp F1      &kp F2         &kp F3     &kp F4             &kp F5                                         &kp F6    &kp F7          &kp F8            &kp F9        &kp F10        &kp F11
+&kp CARET  &kp ESCAPE  &kp AT_SIGN    &kp HASH   &kp DOLLAR         &kp PERCENT  &kp AMPERSAND                               &kp LESS_THAN   &kp GREATER_THAN  &kp PIPE      &kp BACKSPACE  &kp F12
+&trans     &kp TAB     &kp EQUAL      &kp SQT    &kp DOUBLE_QUOTES  &kp GRAVE    &kp LBKT                                    &kp LPAR        &kp RPAR          &kp ASTERISK  &kp ENTER      &kp DELETE
+&trans     &kp TILDE   &kp RA(MINUS)  &kp MINUS  &kp PLUS           &kp TILDE    &trans         &kp C_MUTE         &kp RBKT  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp MINUS     &kp SLASH      &kp BACKSLASH
+                       &trans         &trans     &trans             &to 0        &trans         &kp RIGHT_CONTROL  &to 2     &trans          &trans            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
