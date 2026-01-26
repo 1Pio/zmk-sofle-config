@@ -138,8 +138,8 @@
             bindings = <
 &bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                              &trans           &trans           &trans           &trans           &trans         &trans
 &ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF  &kp MINUS                                 &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp BACKSPACE  &trans
-&none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &kp PLUS         &kp EQUAL                                 &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ENTER      &kp DELETE
-&none              &none            &none            &none            &trans           &kp ASTERISK     &rgb_ug RGB_TOG  &none   &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans         &trans
+&trans             &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &trans           &trans           &kp PLUS         &kp EQUAL                                 &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ENTER      &kp DELETE
+&trans             &trans           &trans           &trans           &trans           &kp ASTERISK     &rgb_ug RGB_TOG  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans         &trans
                                     &trans           &trans           &trans           &trans           &trans           &trans  &trans           &trans           &trans           &trans
             >;
         };
