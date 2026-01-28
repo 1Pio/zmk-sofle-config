@@ -78,11 +78,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESCAPE        &kp N1  &kp N2    &kp N3  &kp N4        &kp N5                                        &kp N6  &kp N7  &kp N8               &kp N9                  &kp N0                &mt DOUBLE_QUOTES SQT
-&kp TAB           &kp Q   &kp W     &kp E   &kp R         &kp T      &kp Y                                      &kp U   &kp I                &kp O                   &kp P                 &kp BSPC
-&kp LEFT_SHIFT    &kp A   &kp S     &kp D   &kp F         &kp G      &kp H                                      &kp J   &kp K                &kp L                   &kp SEMI              &kp SQT
-&kp LEFT_CONTROL  &kp Z   &kp X     &kp C   &kp V         &kp B      &kp C_MUTE      &DTapPlay          &kp N   &kp M   &mt SEMICOLON COMMA  &mt EXCLAMATION PERIOD  &mt UNDERSCORE SLASH  &kp ENTER
-                          &kp LGUI  &Super  &kp LEFT_ALT  &kp SPACE  &kp LEFT_SHIFT  &kp RIGHT_CONTROL  &to 1   &to 2   &kp RALT             &kp RIGHT_SHIFT
+&kp ESCAPE      &kp N1  &kp N2    &kp N3  &kp N4        &kp N5                                        &kp N6  &kp N7  &kp N8               &kp N9                  &kp N0                &mt DOUBLE_QUOTES SQT
+&kp ESCAPE      &kp Q   &kp W     &kp E   &kp R         &kp T      &kp Y                                      &kp U   &kp I                &kp O                   &kp P                 &kp BSPC
+&kp TAB         &kp A   &kp S     &kp D   &kp F         &kp G      &kp H                                      &kp J   &kp K                &kp L                   &kp SEMI              &kp SQT
+&kp LEFT_SHIFT  &kp Z   &kp X     &kp C   &kp V         &kp B      &kp C_MUTE      &DTapPlay          &kp N   &kp M   &mt SEMICOLON COMMA  &mt EXCLAMATION PERIOD  &mt UNDERSCORE SLASH  &kp ENTER
+                        &kp LGUI  &Super  &kp LEFT_ALT  &kp SPACE  &kp LEFT_SHIFT  &kp RIGHT_CONTROL  &to 1   &to 2   &kp RALT             &kp RIGHT_SHIFT
             >;
         };
 
@@ -119,7 +119,7 @@
 
             bindings = <
 &trans  &trans            &trans          &trans          &trans           &trans                                              &trans    &trans          &trans        &trans     &trans         &trans
-&trans  &kp INS           &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP    &kp K_BACK                                    &kp K_PREVIOUS  &kp K_NEXT    &trans     &kp BACKSPACE  &trans
+&trans  &kp INS           &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP    &kp C_AC_BACK                                 &kp C_PREVIOUS  &kp C_NEXT    &trans     &kp BACKSPACE  &trans
 &trans  &mmv MOVE_Y(500)  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &kp LEFT_ARROW                                &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp ENTER      &kp DEL
 &trans  &kp K_UNDO        &mkp MB4        &mkp MB3        &mkp MB5         &kp CAPS        &kp C_REWIND    &kp C_FAST_FORWARD  &mkp MB1  &kp PAGE_DOWN   &kp PAGE_UP   &mkp MB2   &trans         &trans
                           &trans          &trans          &trans           &to 0           &trans          &trans              &to 1     &trans          &trans        &trans
