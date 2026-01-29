@@ -82,7 +82,7 @@
 &kp ESCAPE      &kp Q   &kp W     &kp E   &kp R         &kp T      &kp Y                                     &kp U   &kp I                &kp O                   &kp P                 &kp BSPC
 &kp TAB         &kp A   &kp S     &kp D   &kp F         &kp G      &kp H                                     &kp J   &kp K                &kp L                   &kp SEMI              &kp SQT
 &kp LEFT_SHIFT  &kp Z   &kp X     &kp C   &kp V         &kp B      &kp C_MUTE      &DTapPlay         &kp N   &kp M   &mt SEMICOLON COMMA  &mt EXCLAMATION PERIOD  &mt UNDERSCORE SLASH  &kp ENTER
-                        &kp LGUI  &Super  &kp LEFT_ALT  &kp SPACE  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &to 1   &to 2   &kp RALT             &kp RIGHT_SHIFT
+                        &kp LGUI  &Super  &kp LEFT_ALT  &kp SPACE  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &to 1   &to 2   &kp RIGHT_SHIFT      &kp RIGHT_ALT
             >;
         };
 
@@ -97,11 +97,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans     &kp F1      &kp F2         &kp F3     &kp F4             &kp F5                                         &kp F6    &kp F7          &kp F8            &kp F9        &kp F10        &kp F11
-&kp CARET  &kp ESCAPE  &kp AT_SIGN    &kp HASH   &kp DOLLAR         &kp PERCENT  &kp AMPERSAND                               &kp LESS_THAN   &kp GREATER_THAN  &kp PIPE      &kp BACKSPACE  &kp F12
-&trans     &kp TAB     &kp EQUAL      &kp SQT    &kp DOUBLE_QUOTES  &kp GRAVE    &kp LBKT                                    &kp LPAR        &kp RPAR          &kp ASTERISK  &kp ENTER      &kp DELETE
-&trans     &kp TILDE   &kp RA(MINUS)  &kp MINUS  &kp PLUS           &kp TILDE    &trans         &kp C_MUTE         &kp RBKT  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp MINUS     &kp SLASH      &kp BACKSLASH
-                       &trans         &trans     &trans             &to 0        &trans         &kp RIGHT_CONTROL  &to 3     &trans          &trans            &trans
+&trans     &kp F1      &kp F2         &kp F3     &kp F4             &kp F5                                  &kp F6    &kp F7          &kp F8            &kp F9          &kp F10        &kp F11
+&kp CARET  &kp ESCAPE  &kp AT_SIGN    &kp HASH   &kp DOLLAR         &kp PERCENT  &kp AMPERSAND                        &kp LESS_THAN   &kp GREATER_THAN  &kp PIPE        &kp BACKSPACE  &kp F12
+&trans     &kp TAB     &kp EQUAL      &kp SQT    &kp DOUBLE_QUOTES  &kp GRAVE    &kp LBKT                             &kp LPAR        &kp RPAR          &kp ASTERISK    &kp ENTER      &kp DELETE
+&trans     &kp TILDE   &kp RA(MINUS)  &kp MINUS  &kp PLUS           &kp TILDE    &trans         &kp C_MUTE  &kp RBKT  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp UNDERSCORE  &kp SLASH      &kp BACKSLASH
+                       &trans         &trans     &trans             &to 0        &trans         &trans      &to 3     &trans          &trans            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
