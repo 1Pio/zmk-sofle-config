@@ -97,11 +97,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans     &kp F1      &kp F2              &kp F3               &kp F4                &kp F5                                                  &kp F6                &kp F7                   &kp F8                    &kp F9           &kp F10        &kp F11
-&kp CARET  &kp ESCAPE  &kp DE_EXCLAMATION  &kp DE_QUESTION      &kp DE_AT             &kp DE_PERCENT         &kp DE_AMPERSAND                                       &kp DE_LESS_THAN         &kp DE_GREATER_THAN       &kp DE_SLASH     &kp BACKSPACE  &kp F12
-&trans     &kp TAB     &kp DE_EQUAL        &kp DE_SINGLE_QUOTE  &kp DE_DOUBLE_QUOTES  &kp DE_ACUTE           &kp DE_LEFT_BRACKET                                    &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_ASTERISK  &kp ENTER      &kp DELETE
-&trans     &kp TILDE   &kp DE_MINUS        &kp DE_PLUS          &kp DE_HASH           &mt DE_EURO DE_DOLLAR  &trans               &kp C_MUTE  &kp DE_RIGHT_BRACKET  &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp DE_SZ        &kp PIPE       &kp BACKSLASH
-                       &trans              &trans               &trans                &to 0                  &trans               &trans      &to 2                 &trans                   &trans                    &trans
+&trans        &kp F1        &kp F2              &kp F3               &kp F4                &kp F5                                                  &kp F6                &kp F7                   &kp F8                    &kp F9           &kp F10        &kp F11
+&kp DE_CARET  &kp ESCAPE    &kp DE_EXCLAMATION  &kp DE_QUESTION      &kp DE_AT             &kp DE_PERCENT         &kp DE_AMPERSAND                                       &kp DE_LESS_THAN         &kp DE_GREATER_THAN       &kp DE_SLASH     &kp BACKSPACE  &kp F12
+&trans        &kp TAB       &kp DE_EQUAL        &kp DE_SINGLE_QUOTE  &kp DE_DOUBLE_QUOTES  &kp DE_ACUTE           &kp DE_LEFT_BRACKET                                    &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_ASTERISK  &kp ENTER      &kp DELETE
+&trans        &kp DE_TILDE  &kp DE_MINUS        &kp DE_PLUS          &kp DE_HASH           &mt DE_EURO DE_DOLLAR  &trans               &kp C_MUTE  &kp DE_RIGHT_BRACKET  &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp DE_SZ        &kp PIPE       &kp DE_BACKSLASH
+                            &trans              &trans               &trans                &to 0                  &trans               &trans      &to 2                 &trans                   &trans                    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
@@ -138,11 +138,11 @@
 
             display-name = "adjust";
             bindings = <
-&bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                              &trans           &trans           &trans           &trans           &trans         &trans
-&ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF  &kp DE_PLUS                               &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp BACKSPACE  &trans
-&trans             &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &kp DE_SLASH     &kp DE_ASTERISK  &kp DE_MINUS     &kp EQUAL                                 &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ENTER      &kp DELETE
-&trans             &trans           &trans           &trans           &trans           &trans           &rgb_ug RGB_TOG  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans         &trans
-                                    &trans           &trans           &trans           &to 0            &trans           &trans  &to 1            &trans           &trans           &trans
+&bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                              &trans     &trans     &trans     &trans     &trans         &trans
+&ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF  &kp DE_PLUS                         &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp BACKSPACE  &trans
+&trans             &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &kp DE_SLASH     &kp DE_ASTERISK  &kp DE_MINUS     &kp DE_EQUAL                        &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp ENTER      &kp DELETE
+&trans             &trans           &trans           &trans           &trans           &trans           &rgb_ug RGB_TOG  &trans  &kp DE_N0  &kp DE_N1  &kp DE_N2  &kp DE_N3  &trans         &trans
+                                    &trans           &trans           &trans           &to 0            &trans           &trans  &to 1      &trans     &trans     &trans
             >;
         };
     };
