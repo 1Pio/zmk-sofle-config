@@ -68,7 +68,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "default";
+            display-name = "—";
 
             // ------------------------------------------------------------------------------------------------------------
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   `   |
@@ -78,16 +78,16 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESCAPE      &kp N1    &kp N2        &kp N3    &kp N4        &kp N5                                       &kp N6    &kp N7    &kp N8                     &kp N9                        &kp N0                      &mt DE_DOUBLE_QUOTES DE_ACUTE
-&kp ESCAPE      &kp DE_Q  &kp DE_W      &kp DE_E  &kp DE_R      &kp DE_T   &kp DE_Z                                    &kp DE_U  &kp DE_I                   &kp DE_O                      &kp BACKSPACE               &kp ENTER
-&kp TAB         &kp DE_A  &kp DE_S      &kp DE_D  &kp DE_F      &kp DE_G   &kp DE_H                                    &kp DE_J  &kp DE_K                   &kp DE_L                      &kp DE_P                    &kp DE_A_UMLAUT
-&kp LEFT_SHIFT  &kp DE_Y  &kp DE_X      &kp DE_C  &kp DE_V      &kp DE_B   &kp C_MUTE      &DTapPlay         &kp DE_N  &kp DE_M  &mt DE_SEMICOLON DE_COMMA  &mt DE_EXCLAMATION DE_PERIOD  &mt DE_UNDERSCORE DE_MINUS  &kp DE_O_UMLAUT
-                          &kp LEFT_GUI  &Super    &kp LEFT_ALT  &kp SPACE  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &to 1     &to 3     &kp RIGHT_SHIFT            &kp RIGHT_ALT
+&kp ESCAPE      &kp N1    &kp N2            &kp N3    &kp N4        &kp N5                                       &kp N6    &kp N7    &kp N8                     &kp N9                        &kp N0                      &mt DE_DOUBLE_QUOTES DE_ACUTE
+&kp TAB         &kp DE_Q  &kp DE_W          &kp DE_E  &kp DE_R      &kp DE_T   &kp DE_Z                                    &kp DE_U  &kp DE_I                   &kp DE_O                      &kp DE_P                    &kp DE_U_UMLAUT
+&kp LEFT_SHIFT  &kp DE_A  &kp DE_S          &kp DE_D  &kp DE_F      &kp DE_G   &kp DE_H                                    &kp DE_J  &kp DE_K                   &kp DE_L                      &kp DE_O_UMLAUT             &kp DE_A_UMLAUT
+&kp LEFT_SHIFT  &kp DE_Y  &kp DE_X          &kp DE_C  &kp DE_V      &kp DE_B   &kp C_MUTE      &DTapPlay         &kp DE_N  &kp DE_M  &mt DE_SEMICOLON DE_COMMA  &mt DE_EXCLAMATION DE_PERIOD  &mt DE_UNDERSCORE DE_MINUS  &kp DE_O_UMLAUT
+                          &kp LEFT_COMMAND  &Super    &kp LEFT_ALT  &kp SPACE  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &to 1     &to 3     &kp RIGHT_SHIFT            &kp RIGHT_ALT
             >;
         };
 
         lower_layer {
-            display-name = "lower";
+            display-name = "( 1 )";
 
             // ------------------------------------------------------------------------------------------------------------
             // |       |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  |  F11  |
@@ -108,7 +108,7 @@
         };
 
         raise_layer {
-            display-name = "raise";
+            display-name = "( 2 )";
 
             // ------------------------------------------------------------------------------------------------------------
             // | BTCLR | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
@@ -136,7 +136,7 @@
             // |        |         |         |         |         |         | RGB_TOG | |      |      |      |       |      |       |       |
             //                    |         |         |         |         |         | |      |      |      |       |      |
 
-            display-name = "adjust";
+            display-name = "( 3 )";
             bindings = <
 &bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                              &trans           &trans           &trans           &trans           &trans         &trans
 &ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF  &kp DE_PLUS                               &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp BACKSPACE  &trans
