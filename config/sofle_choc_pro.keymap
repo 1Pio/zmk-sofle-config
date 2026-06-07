@@ -43,11 +43,13 @@
         cmd_to_mt: cmd_to_mt {
             compatible = "zmk,behavior-hold-tap";
             label = "CMD_TO_MT";
-            bindings = <&kp>, <&cmd_to>;
+            bindings = <&kp>, <&to>;
 
             #binding-cells = <2>;
             tapping-term-ms = <400>;
             flavor = "hold-preferred";
+            hold-while-undecided;
+            hold-while-undecided-linger;
         };
     };
 
