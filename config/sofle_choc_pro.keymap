@@ -78,11 +78,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESCAPE      &kp N1    &kp N2            &kp N3    &kp N4        &kp N5                                       &kp N6    &kp N7    &kp N8                     &kp N9                        &kp N0                      &mt DE_DOUBLE_QUOTES DE_ACUTE
-&kp TAB         &kp DE_Q  &kp DE_W          &kp DE_E  &kp DE_R      &kp DE_T   &kp DE_Z                                    &kp DE_U  &kp DE_I                   &kp DE_O                      &kp DE_P                    &kp DE_U_UMLAUT
-&kp LEFT_SHIFT  &kp DE_A  &kp DE_S          &kp DE_D  &kp DE_F      &kp DE_G   &kp DE_H                                    &kp DE_J  &kp DE_K                   &kp DE_L                      &kp DE_O_UMLAUT             &kp DE_A_UMLAUT
-&kp LEFT_SHIFT  &kp DE_Y  &kp DE_X          &kp DE_C  &kp DE_V      &kp DE_B   &kp C_MUTE      &DTapPlay         &kp DE_N  &kp DE_M  &mt DE_SEMICOLON DE_COMMA  &mt DE_EXCLAMATION DE_PERIOD  &mt DE_UNDERSCORE DE_MINUS  &kp DE_O_UMLAUT
-                          &kp LEFT_COMMAND  &Super    &kp LEFT_ALT  &kp SPACE  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &to 1     &to 3     &kp RIGHT_SHIFT            &kp RIGHT_ALT
+&kp ESCAPE      &kp N1    &kp N2            &kp N3        &kp N4            &kp N5                                       &kp N6    &kp N7    &kp N8                     &kp N9                        &kp N0                      &mt DE_DOUBLE_QUOTES DE_ACUTE
+&kp TAB         &kp DE_Q  &kp DE_W          &kp DE_E      &kp DE_R          &kp DE_T   &kp DE_Z                                    &kp DE_U  &kp DE_I                   &kp DE_O                      &kp DE_P                    &kp DE_U_UMLAUT
+&kp LEFT_SHIFT  &kp DE_A  &kp DE_S          &kp DE_D      &kp DE_F          &kp DE_G   &kp DE_H                                    &kp DE_J  &kp DE_K                   &kp DE_L                      &kp DE_O_UMLAUT             &kp DE_A_UMLAUT
+&kp LEFT_SHIFT  &kp DE_Y  &kp DE_X          &kp DE_C      &kp DE_V          &kp DE_B   &kp F11         &DTapPlay         &kp DE_N  &kp DE_M  &mt DE_SEMICOLON DE_COMMA  &mt DE_EXCLAMATION DE_PERIOD  &mt DE_UNDERSCORE DE_MINUS  &kp DE_O_UMLAUT
+                          &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp SPACE  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &to 2     &to 1     &kp RIGHT_SHIFT            &kp RIGHT_ALT
             >;
         };
 
@@ -97,11 +97,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans        &kp F1        &kp F2              &kp F3               &kp F4                &kp F5                                                  &kp F6                &kp F7                   &kp F8                    &kp F9           &kp F10        &kp F11
-&kp DE_CARET  &kp ESCAPE    &kp DE_EXCLAMATION  &kp DE_QUESTION      &kp DE_AT             &kp DE_PERCENT         &kp DE_AMPERSAND                                       &kp DE_LESS_THAN         &kp DE_GREATER_THAN       &kp DE_SLASH     &kp BACKSPACE  &kp F12
-&trans        &kp TAB       &kp DE_EQUAL        &kp DE_SINGLE_QUOTE  &kp DE_DOUBLE_QUOTES  &kp DE_ACUTE           &kp DE_LEFT_BRACKET                                    &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_ASTERISK  &kp ENTER      &kp DELETE
-&trans        &kp DE_TILDE  &kp DE_MINUS        &kp DE_PLUS          &kp DE_HASH           &mt DE_EURO DE_DOLLAR  &trans               &kp C_MUTE  &kp DE_RIGHT_BRACKET  &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp DE_SZ        &kp PIPE       &kp DE_BACKSLASH
-                            &trans              &trans               &trans                &to 0                  &trans               &trans      &to 2                 &trans                   &trans                    &trans
+&trans        &kp F1        &kp F2              &kp F3               &kp F4                &kp F5                                                     &kp F6                &kp F7                   &kp F8                    &kp F9           &kp F10        &kp F11
+&kp DE_CARET  &kp ESCAPE    &kp DE_EXCLAMATION  &kp DE_QUESTION      &kp DE_AT             &kp DE_PERCENT         &kp DE_AMPERSAND                                          &kp DE_LESS_THAN         &kp DE_GREATER_THAN       &kp DE_SLASH     &kp BACKSPACE  &kp F12
+&trans        &kp TAB       &kp DE_EQUAL        &kp DE_SINGLE_QUOTE  &kp DE_DOUBLE_QUOTES  &kp DE_ACUTE           &kp DE_LEFT_BRACKET                                       &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_ASTERISK  &kp ENTER      &kp DELETE
+&trans        &kp DE_TILDE  &kp DE_MINUS        &kp DE_PLUS          &kp DE_HASH           &mt DE_EURO DE_DOLLAR  &trans               &kp C_MUTE     &kp DE_RIGHT_BRACKET  &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp DE_SZ        &kp PIPE       &kp DE_BACKSLASH
+                            &trans              &trans               &trans                &to 0                  &trans               &kp RIGHT_ALT  &to 2                 &to 3                    &trans                    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
@@ -121,7 +121,7 @@
 &trans  &trans            &trans          &trans          &trans           &trans                                              &trans    &trans          &trans        &trans     &trans         &trans
 &trans  &kp INS           &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP    &kp C_AC_BACK                                 &kp C_PREVIOUS  &kp C_NEXT    &trans     &kp BACKSPACE  &trans
 &trans  &mmv MOVE_Y(500)  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &kp LEFT_ARROW                                &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp ENTER      &kp DEL
-&trans  &kp K_UNDO        &mkp MB4        &mkp MB3        &mkp MB5         &kp CAPS        &kp C_REWIND    &kp C_FAST_FORWARD  &mkp MB1  &kp PAGE_DOWN   &kp PAGE_UP   &mkp MB2   &trans         &trans
+&trans  &kp K_UNDO        &mkp MB4        &mkp MB3        &mkp MB5         &kp CAPS        &kp C_REWIND    &kp C_FAST_FORWARD  &mkp MB1  &kp PAGE_DOWN   &kp PAGE_UP   &mkp MB2   &kp DELETE     &trans
                           &trans          &trans          &trans           &to 0           &trans          &trans              &to 1     &trans          &trans        &trans
             >;
 
@@ -142,7 +142,7 @@
 &ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF  &kp DE_PLUS                               &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp BACKSPACE  &trans
 &trans             &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &kp DE_SLASH     &kp DE_ASTERISK  &kp DE_MINUS     &kp DE_EQUAL                              &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ENTER      &kp DELETE
 &trans             &trans           &trans           &trans           &trans           &trans           &rgb_ug RGB_TOG  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans         &trans
-                                    &trans           &trans           &trans           &to 0            &trans           &trans  &to 1            &trans           &trans           &trans
+                                    &trans           &trans           &trans           &to 0            &trans           &trans  &to 2            &trans           &trans           &trans
             >;
         };
     };
