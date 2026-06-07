@@ -120,8 +120,8 @@
             bindings = <
 &trans  &trans            &trans            &trans          &trans           &trans                                              &trans    &trans          &trans        &trans         &trans         &trans
 &trans  &kp TAB           &msc MOVE_X(-10)  &mmv MOVE_UP    &msc MOVE_X(10)  &msc SCRL_UP    &mkp MB1                                      &mkp MCLK       &mkp MB2      &kp BACKSPACE  &kp BACKSPACE  &trans
-&trans  &msc MOVE_Y(10)   &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &kp LEFT_ARROW                                &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &kp ENTER      &kp DEL
-&trans  &msc MOVE_Y(-10)  &mkp MB4          &mkp MB3        &mkp MB5         &kp CAPS        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &mkp MB4  &kp PAGE_DOWN   &kp PAGE_UP   &mkp MB5       &kp DELETE     &trans
+&trans  &msc MOVE_Y(-20)  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &kp LEFT_ARROW                                &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &kp ENTER      &kp DEL
+&trans  &msc MOVE_Y(20)   &mkp MB4          &mkp MB3        &mkp MB5         &kp CAPS        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &mkp MB4  &kp PAGE_DOWN   &kp PAGE_UP   &mkp MB5       &kp DELETE     &trans
                           &trans            &trans          &trans           &to 0           &trans             &kp RIGHT_ALT    &to 1     &trans          &trans        &trans
             >;
 
