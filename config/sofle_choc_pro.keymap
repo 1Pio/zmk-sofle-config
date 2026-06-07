@@ -20,14 +20,7 @@
 / {
     // Activate ADJUST layer by pressing raise and lower
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        adjust_layer {
-            if-layers = <2 3>;
-            then-layer = <4>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 
     behaviors {
         DTapPlay: DTapPlay {
@@ -35,23 +28,6 @@
             label = "DTAPPLAY";
             #binding-cells = <0>;
             bindings = <&kp C_PLAY_PAUSE>, <&kp C_NEXT>, <&kp C_PREVIOUS>;
-        };
-
-        HTapLayer: HTapLayer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HTAPLAYER";
-            bindings = <&mo>, <&to>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <55>;
-            flavor = "balanced";
-        };
-
-        DTapLayers1m: DTapLayers1m {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DTAPLAYERS1M";
-            #binding-cells = <0>;
-            bindings = <&to 3>, <&to 0>;
         };
 
         hTapMomentaryLayer: hTapMomentaryLayer {
@@ -93,14 +69,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        cmd {
-            bindings = <&to 0>;
-            key-positions = <52>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
