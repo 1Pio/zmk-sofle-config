@@ -59,7 +59,6 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <230>;
-            hold-while-undecided;
         };
 
         raise_rgb_layer: raise_rgb_layer {
@@ -69,7 +68,6 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <230>;
-            hold-while-undecided;
         };
 
         adjust_rgb_layer: adjust_rgb_layer {
@@ -79,7 +77,6 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <230>;
-            hold-while-undecided;
         };
     };
 
@@ -107,8 +104,7 @@
             bindings =
                 <&macro_tap>,
                 <&to BASE>,
-                <&rgb_ug RGB_ON>,
-                <&rgb_ug RGB_COLOR_HSB(2,100,10)>,
+                <&rgb_ug RGB_COLOR_HSB(3,100,2)>,
                 <&rgb_ug RGB_EFS_CMD 0>;
         };
 
@@ -121,9 +117,8 @@
             bindings =
                 <&macro_tap>,
                 <&to LOWER>,
-                <&rgb_ug RGB_ON>,
-                <&rgb_ug RGB_COLOR_HSB(8,100,100)>,
-                <&rgb_ug RGB_EFS_CMD 1>;
+                <&rgb_ug RGB_COLOR_HSB(3,100,25)>,
+                <&rgb_ug RGB_EFS_CMD 0>;
         };
 
         lower_rgb_mo: lower_rgb_mo {
@@ -136,15 +131,13 @@
                 <&macro_press>,
                 <&mo LOWER>,
                 <&macro_tap>,
-                <&rgb_ug RGB_ON>,
-                <&rgb_ug RGB_COLOR_HSB(8,100,100)>,
-                <&rgb_ug RGB_EFS_CMD 1>,
+                <&rgb_ug RGB_COLOR_HSB(3,100,25)>,
+                <&rgb_ug RGB_EFS_CMD 0>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&mo LOWER>,
                 <&macro_tap>,
-                <&rgb_ug RGB_ON>,
-                <&rgb_ug RGB_COLOR_HSB(2,100,10)>,
+                <&rgb_ug RGB_COLOR_HSB(3,100,2)>,
                 <&rgb_ug RGB_EFS_CMD 0>;
         };
 
@@ -157,8 +150,7 @@
             bindings =
                 <&macro_tap>,
                 <&to RAISE>,
-                <&rgb_ug RGB_ON>,
-                <&rgb_ug RGB_COLOR_HSB(8,100,80)>,
+                <&rgb_ug RGB_COLOR_HSB(6,100,10)>,
                 <&rgb_ug RGB_EFS_CMD 0>;
         };
 
@@ -172,15 +164,13 @@
                 <&macro_press>,
                 <&mo RAISE>,
                 <&macro_tap>,
-                <&rgb_ug RGB_ON>,
-                <&rgb_ug RGB_COLOR_HSB(8,100,80)>,
+                <&rgb_ug RGB_COLOR_HSB(6,100,10)>,
                 <&rgb_ug RGB_EFS_CMD 0>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&mo RAISE>,
                 <&macro_tap>,
-                <&rgb_ug RGB_ON>,
-                <&rgb_ug RGB_COLOR_HSB(2,100,10)>,
+                <&rgb_ug RGB_COLOR_HSB(3,100,2)>,
                 <&rgb_ug RGB_EFS_CMD 0>;
         };
 
@@ -193,8 +183,7 @@
             bindings =
                 <&macro_tap>,
                 <&to ADJUST>,
-                <&rgb_ug RGB_ON>,
-                <&rgb_ug RGB_COLOR_HSB(0,0,40)>,
+                <&rgb_ug RGB_COLOR_HSB(30,95,7)>,
                 <&rgb_ug RGB_EFS_CMD 0>;
         };
 
@@ -208,15 +197,13 @@
                 <&macro_press>,
                 <&mo ADJUST>,
                 <&macro_tap>,
-                <&rgb_ug RGB_ON>,
-                <&rgb_ug RGB_COLOR_HSB(0,0,40)>,
+                <&rgb_ug RGB_COLOR_HSB(30,95,7)>,
                 <&rgb_ug RGB_EFS_CMD 0>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&mo ADJUST>,
                 <&macro_tap>,
-                <&rgb_ug RGB_ON>,
-                <&rgb_ug RGB_COLOR_HSB(2,100,10)>,
+                <&rgb_ug RGB_COLOR_HSB(3,100,2)>,
                 <&rgb_ug RGB_EFS_CMD 0>;
         };
     };
@@ -301,7 +288,7 @@
 &ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF  &kp DE_PLUS                               &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp BACKSPACE  &trans
 &trans             &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &kp DE_SLASH     &kp DE_ASTERISK  &kp DE_MINUS     &kp DE_EQUAL                              &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ENTER      &kp DELETE
 &trans             &trans           &trans           &trans           &trans           &trans           &rgb_ug RGB_TOG  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DELETE     &trans
-                                    &trans           &trans           &trans           &base_rgb        &trans           &trans  &lower_rgb_to    &trans           &trans           &trans
+                                    &trans           &trans           &trans           &base_rgb        &trans           &trans  &lower_rgb_to    &trans           &base_rgb        &trans
             >;
         };
     };
